@@ -6,7 +6,6 @@
   <title>FIT - Falah Inovasi Teknologi</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="app/globals.css">
-  <link rel="stylesheet" href="mobile view.css">
   <style>
     /* Enhanced responsive styles and improved color contrast */
     /* Enhanced futuristic styles with neon blue theme */
@@ -522,6 +521,34 @@
         transition: none;
       }
     }
+
+    /* Laptop / default (>= 1024px) */
+@media (min-width: 1024px) {
+  .logo-container { width: 8rem; height: 8rem; }
+  .logo-inner img { width: 4rem; height: 4rem; }
+  h1.hologram-text { font-size: 2.5rem; }
+  p { font-size: 1.1rem; }
+  .social-link { font-size: 1.1rem; padding: 1rem 2.5rem; }
+}
+
+/* Tablet / HP sedang (641px - 1023px) */
+@media (max-width: 1023px) {
+  .logo-container { width: 6.5rem; height: 6.5rem; }
+  .logo-inner img { width: 3.2rem; height: 3.2rem; }
+  h1.hologram-text { font-size: 2rem; }
+  p { font-size: 1rem; }
+  .social-link { font-size: 1rem; padding: 0.9rem 2rem; }
+}
+
+/* HP kecil (<= 640px) */
+@media (max-width: 640px) {
+  .logo-container { width: 5rem; height: 5rem; }
+  .logo-inner img { width: 2.5rem; height: 2.5rem; }
+  h1.hologram-text { font-size: 1.5rem; }
+  p { font-size: 0.9rem; line-height: 1.5; padding: 0 0.5rem; }
+  .social-link { font-size: 0.95rem; padding: 0.8rem 1.5rem; }
+}
+
   </style>
 </head>
 <body class="tech-grid min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
@@ -629,11 +656,11 @@
   </p>
   <div class="w-20 sm:w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"></div>
 </div>
-      
+    
       <!-- Enhanced social links with better mobile touch targets -->
       <div class="space-y-3 sm:space-y-4">
         <a href="https://www.instagram.com/falahinovasiteknologi?igsh=NjJhMzF6dDBwamJ4" 
-           class="social-link tech-border block py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-white font-semibold text-base sm:text-lg group">
+           class="social-link tech-border block py-3 sm:py-4 px-10 sm:px-8 -xl text-white font-semibold text-base sm:text-lg group">
           <div class="flex items-center justify-center space-x-3">
             <svg class="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
